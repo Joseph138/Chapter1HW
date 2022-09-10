@@ -1,0 +1,23 @@
+package Textbook;
+
+public class TextbookTester {
+    public static void main(String[] args){
+        //Developing a new package into the tester class
+        Textbook t1 = new Textbook();
+        //Putting the values from the no argument method
+        t1.getNumOfChapter();
+        t1.getSubject();
+        t1.getNumOfPages();
+        //Use the detail method from the textbook class
+        t1.detail();
+        //prints the values of t1
+        System.out.println(t1);
+        Textbook t2 = new Textbook();
+        //Use the setters methods to change the values of the textbook packages
+        t2.setNumOfPages(3000);
+        t2.setSubject("Cooking");;
+        t2.setNumOfChapter(25);
+        //From the toString method in the textbook class
+        System.out.println(t2.toString());
+    }
+}
